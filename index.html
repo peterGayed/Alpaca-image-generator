@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container border-2 rounded-2">
+        <h1>ALPACA IMAGE GENERATOR</h1>
+        <div class="row p-3">
+            <div class="col-6">
+                <div id="imgContainer">
+                    <img id="nose" class="w-100" src="Images/nose.png">
+                    <img id="neck" class="w-100" src="Images/neck/default.png">
+                    <img id="mouth" class="w-100" src="Images/mouth/default.png">
+                    <img id="leg" class="w-100" src="Images/leg/default.png">
+                    <img id="hair" class="w-100" src="Images/hair/default.png">
+                    <img id="eyes" class="w-100" src="Images/eyes/default.png">
+                    <img id="ears" class="w-100" src="Images/ears/default.png">
+                    <img id="accessories" class="w-100" src="Images/accessories/headphone.png">
+                </div>
+                <div id="comButton d-flex justify-content-between">
+                    <button class="btnMain px-3 py-1 mx-3">Randomize</button>
+                    <button class="btnMain px-3 py-1 m-2 mx-3">Download</button>
+                </div>
+            </div>
+            <div class="col-6  d-flex flex-column col">
+                <div class="featureCont h-50 ">
+                    <div class="p-3">
+                        <span><h2>ALPACA Features</h2></span>
+                    </div>
+                    <div class="featuresCont d-flex align-items-center justify-content-center">
+                        <div class="mainButtons row-cols-4 p-2 ">
+                            <button class="btn" id="bHair">Hair</button>
+                            <button class="btn" id="bEyes">Eyes</button>
+                            <button class="btn" id="bEars">Ears</button>
+                            <button class="btn" id="bNeck">Neck</button>
+                            <button class="btn" id="bMouth">Mouth</button>
+                            <button class="btn" id="bLeg">Leg</button>
+                            <button class="btn" id="bNose">Nose</button>
+                            <button class="btn" id="bAccessories">Accessories</button>
+                            <button class="btn" id="bBackground">Background</button>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="uLine"></div>
+                <div class="styleCont h-50 ">
+                    <div>
+                        <span><h2>Style</h2></span>
+                    </div>
+                    <div id="dbBackground" class="style align-items-center justify-content-center">
+                        <div class="bbuttons row-cols-4">
+                            <button class="btnColor" id="blue50"><img class="imgButtons" src="Images/backgrounds/blue50.png" ></button>
+                            <button class="btnColor" id="blue60"><img class="imgButtons" src="Images/backgrounds/blue60.png" ></button>
+                            <button class="btnColor" id="blue70"><img class="imgButtons" src="Images/backgrounds/blue70.png" ></button>
+                            <button class="btnColor" id="darkblue30"><img class="imgButtons" src="Images/backgrounds/darkblue30.png" ></button>
+                            <button class="btnColor" id="darkblue50"><img class="imgButtons" src="Images/backgrounds/darkblue50.png" ></button>
+                            <button class="btnColor" id="darkblue70"><img class="imgButtons" src="Images/backgrounds/darkblue70.png" ></button>
+                            <button class="btnColor" id="green50"><img class="imgButtons" src="Images/backgrounds/green50.png" ></button>
+                            <button class="btnColor" id="green60"><img class="imgButtons" src="Images/backgrounds/green60.png" ></button>
+                            <button class="btnColor" id="green70"><img class="imgButtons" src="Images/backgrounds/green70.png" ></button>
+                            <button class="btnColor" id="grey40"><img class="imgButtons" src="Images/backgrounds/grey40.png" ></button>
+                            <button class="btnColor" id="grey70"><img class="imgButtons" src="Images/backgrounds/grey70.png" ></button>
+                            <button class="btnColor" id="grey80"><img class="imgButtons" src="Images/backgrounds/grey80.png" ></button>
+                            <button class="btnColor" id="red50"><img class="imgButtons" src="Images/backgrounds/red50.png" ></button>
+                            <button class="btnColor" id="red60"><img class="imgButtons" src="Images/backgrounds/red60.png" ></button>
+                            <button class="btnColor" id="red70"><img class="imgButtons" src="Images/backgrounds/red70.png" ></button>
+                            <button class="btnColor" id="yellow50"><img class="imgButtons" src="Images/backgrounds/yellow50.png" ></button>
+                            <button class="btnColor" id="yellow60"><img class="imgButtons" src="Images/backgrounds/yellow60.png" ></button>
+                            <button class="btnColor" id="yellow70"><img class="imgButtons" src="Images/backgrounds/yellow70.png" ></button>
+                        </div>
+                    </div>
+                    <div id="dbHair" class="style align-items-center justify-content-center">
+                        <div class="hbuttons row-cols-4 ">
+                            <button class="btn" id="hDefault">Default</button>
+                            <button class="btn" id="hCurls">Curls</button>
+                            <button class="btn" id="hBang">Bang</button>
+                            <button class="btn" id="hElegant">Elegant</button>
+                            <button class="btn" id="hFancy">Fancy</button>
+                            <button class="btn" id="hShort">Short</button>
+                        </div>
+                    </div>
+                    <div id="dbEyes" class="style align-items-center justify-content-center">
+                        <div class="ebuttons row-cols-4 ">
+                            <button class="btn" id="eDefault">Default</button>
+                            <button class="btn" id="eAngry">Angry</button>
+                            <button class="btn" id="eNaughty">Naughty</button>
+                            <button class="btn" id="ePanda">Panda</button>
+                            <button class="btn" id="eSmart">Smart</button>
+                            <button class="btn" id="eStar">Star</button>
+                        </div>
+                    </div>
+                    <div id="dbEars" class="style align-items-center justify-content-center">
+                        <div class="eabuttons row-cols-3 ">
+                            <button class="btn" id="eaDefault">Default</button>
+                            <button class="btn" id="eaBackward">Backward</button>
+                            <button class="btn" id="eaForward">Forward</button>
+                        </div>
+                    </div>
+                    <div id="dbNeck" class="style align-items-center justify-content-center">
+                        <div class="nbuttons row-cols-4 ">
+                            <button class="btn" id="nDefault">Default</button>
+                            <button class="btn" id="nBackward">Backward</button>
+                            <button class="btn" id="nForward">Forward</button>
+                            <button class="btn" id="nThick">Thick</button>
+                        </div>
+                    </div>
+                    <div id="dbMouth" class="style align-items-center justify-content-center">
+                        <div class="mbuttons row-cols-4 ">
+                            <button class="btn" id="mDefault">Default</button>
+                            <button class="btn" id="mAstonished">Astonished</button>
+                            <button class="btn" id="mEating">Eating</button>
+                            <button class="btn" id="mLaugh">Laugh</button>
+                            <button class="btn" id="mTongue">Tongue</button>
+                        </div>
+                    </div>
+                    <div id="dbNose" class="style align-items-center justify-content-center">
+                        <div class="nobuttons row-cols-1 ">
+                            <button class="btn" id="nDefault">Default</button>
+                        </div>
+                    </div>
+                    <div id="dbLeg" class="style align-items-center justify-content-center">
+                        <div class="lbuttons row-cols-4 ">
+                            <button class="btn" id="lDefault">Default</button>
+                            <button class="btn" id="lPlaying">Playing</button>
+                            <button class="btn" id="lBubble">Bubble Tea</button>
+                            <button class="btn" id="lCookie">Cookie</button>
+                            <button class="btn" id="lBackward">Backward</button>
+                            <button class="btn" id="lForward">Forward</button>
+                        </div>
+                    </div>
+                    <div id="dbAccessories" class="style align-items-center justify-content-center">
+                        <div class="abuttons row-cols-4 ">
+                            <button class="btn" id="aEarings">Earings</button>
+                            <button class="btn" id="aFlower">Flower</button>
+                            <button class="btn" id="aGlasses">Glasses</button>
+                            <button class="btn" id="aHeadphone">Headphone</button>
+                            <button class="btn" id="aNone">None</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

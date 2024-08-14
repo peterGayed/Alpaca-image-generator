@@ -1,0 +1,95 @@
+body{
+    font-family: "PT Sans", sans-serif;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    background-color: blanchedalmond;
+    
+    text-align: center;
+}
+#imgContainer
+{
+    position:relative;
+    background-image: url("Images/backgrounds/blue70.png");
+    width: 100%;
+    height: auto;
+}
+#ears,#leg,#nose
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+};
+#neck{
+    position: relative;
+    
+}
+#eyes,#mouth,#hair,#accessories
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+.btn
+{
+    background-color: rgb(0, 71, 55);
+    color: white;
+    border-radius:50px;
+    padding: 5px;
+    margin: 5px;
+    font-size: larger;
+}
+.btn:hover
+{
+    background-color: yellow;
+    color:black;
+}
+.btnMain
+{
+    background-color:rgb(73, 73, 73);
+    color: white;
+    border-radius: 20px;
+    font-size: larger;
+}
+.btnMain:hover
+{
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+.btnColor{
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%; 
+    border: none; 
+    overflow: hidden; 
+    background-color: transparent; 
+    cursor: pointer; 
+    padding: 0;
+    margin: 5px;
+}
+.uLine
+{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
+#dbHair,#dbEars,#dbNeck,#dbMouth,#dbNose,#dbLeg,#dbAccessories,#dbEyes,#dbBackground{
+    display: none;
+}
+#blue50{
+    background-image: url('Images/backgrounds/blue50.png');
+    
+}
+.imgButtons{
+    width: 100%; /* Ensure the image width matches the button */
+    height: 100%; /* Ensure the image height matches the button */
+    object-fit: cover; /* Ensure the image covers the button area */
+    border-radius: 50%; /* Ensure the image itself is circular */
+}
